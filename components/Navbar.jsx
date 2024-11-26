@@ -11,6 +11,7 @@ import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
 const Navbar = () => {
   const { data: session } = useSession();
+
   const profileImage = session?.user.image;
 
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
